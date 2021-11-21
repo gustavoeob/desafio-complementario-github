@@ -260,6 +260,7 @@ ul li {
 }
 
 .loop {
+  min-width: 417px;
   width: 100vw;
 }
 
@@ -358,6 +359,54 @@ ul li {
   padding: 5px;
   font-size: 0.8rem;
   color: cadetblue;
+}
+
+.container-location {
+  background: url(media/background.jpg);
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2.5em 0;
+  margin: auto;
+}
+
+.container-location .location-maps {
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-location .location-maps #maps-location {
+  width: 250px;
+  height: 350px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #enterLocation {
@@ -792,6 +841,59 @@ textarea {
     padding: 5px;
     font-size: 0.8rem;
     color: cadetblue;
+  }
+  .container-location {
+    background: url(media/background.jpg);
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2.5em 0;
+    margin: auto;
+  }
+  .container-location .location-maps {
+    width: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container-location .location-maps #maps-location {
+    width: 350px;
+    height: 350px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container-location iframe {
+    width: 200px;
+    height: 350px;
+  }
+  .container-location .three p {
+    background: none;
+    font-size: 1.2em;
   }
   #enterLocation {
     height: 10px;
@@ -1294,8 +1396,9 @@ textarea {
     border-radius: 8px;
     padding: 10px;
   }
-  #maps1 {
-    margin-bottom: 100px;
+  #maps {
+    width: 400px;
+    height: 350px;
   }
   .container-location {
     background: url(media/background.jpg);
@@ -1313,11 +1416,6 @@ textarea {
             align-items: center;
     padding: 2.5em 0;
     margin: auto;
-    /* BENEFITS */
-    /* -------------------- BOOTSTRAP TABLE ----------------------- */
-    /* REVIEWS */
-    /* FORM */
-    /* FOOTER */
   }
   .container-location .location-maps {
     width: 80%;
@@ -1337,25 +1435,30 @@ textarea {
         -ms-flex-align: center;
             align-items: center;
   }
-  .container-location .explore .gridCont1 .gridItem.three iframe {
-    height: 400px;
+  .container-location iframe {
     width: 600px;
+    height: 350px;
   }
-  .container-location .explore .three p {
+  .container-location .three p {
     background: none;
     font-size: 1.2em;
   }
-  .container-location #searchButton {
+  #searchButton {
     background-color: #fff;
     -webkit-transition: 0.2s ease;
     transition: 0.2s ease;
     border-radius: 8px;
     padding: 2px 10px;
+    /* BENEFITS */
+    /* -------------------- BOOTSTRAP TABLE ----------------------- */
+    /* REVIEWS */
+    /* FORM */
+    /* FOOTER */
   }
-  .container-location #searchButton a {
+  #searchButton a {
     font-size: 0.8em;
   }
-  .container-location .benefits {
+  #searchButton .benefits {
     margin-bottom: 50px;
     display: -ms-grid;
     display: grid;
@@ -1366,7 +1469,7 @@ textarea {
     text-align: center;
     width: 70%;
   }
-  .container-location .memberTitle {
+  #searchButton .memberTitle {
     padding: 20px;
     font-size: 1em;
     font-weight: 400;
@@ -1377,7 +1480,7 @@ textarea {
     -ms-grid-column-span: 3;
     grid-column: 1/4;
   }
-  .container-location .gridItemA {
+  #searchButton .gridItemA {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1391,9 +1494,9 @@ textarea {
     margin: 1em;
     font-size: 0.7rem;
   }
-  .container-location .gridItem1,
-  .container-location .gridItem2,
-  .container-location .gridItem3 {
+  #searchButton .gridItem1,
+  #searchButton .gridItem2,
+  #searchButton .gridItem3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1407,31 +1510,31 @@ textarea {
     font-size: 0.8em;
     text-align: center;
   }
-  .container-location .gridItem.three {
+  #searchButton .gridItem.three {
     padding-top: 12px;
   }
-  .container-location .table {
+  #searchButton .table {
     width: 70% !important;
     margin-bottom: 1em;
     background-color: transparent;
   }
-  .container-location tr {
+  #searchButton tr {
     width: 70%;
   }
-  .container-location td {
+  #searchButton td {
     text-align: center;
   }
-  .container-location th {
+  #searchButton th {
     text-align: center !important;
     color: cadetblue;
   }
-  .container-location .card-group {
+  #searchButton .card-group {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin: 1em 2em !important;
   }
-  .container-location .card-group .card {
+  #searchButton .card-group .card {
     width: 150px !important;
     margin: 2em auto;
     border-radius: 5px;
@@ -1439,7 +1542,7 @@ textarea {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .container-location .card-group .card .card-img-top {
+  #searchButton .card-group .card .card-img-top {
     margin: 2em;
     padding: 1em auto;
     width: 250px;
@@ -1447,7 +1550,7 @@ textarea {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .container-location .formItems * {
+  #searchButton .formItems * {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1459,7 +1562,7 @@ textarea {
             align-items: center;
     margin: 2px;
   }
-  .container-location .formItems h2 {
+  #searchButton .formItems h2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1469,7 +1572,7 @@ textarea {
             justify-content: center;
     margin: 20px;
   }
-  .container-location form {
+  #searchButton form {
     margin: 0 auto;
     width: 250px;
     padding-top: 30px;
@@ -1477,22 +1580,22 @@ textarea {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .container-location label {
+  #searchButton label {
     font-size: 0.8rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .container-location .formItems input,
-  .container-location .formItems button,
-  .container-location .formItems select {
+  #searchButton .formItems input,
+  #searchButton .formItems button,
+  #searchButton .formItems select {
     margin: 0 auto;
   }
-  .container-location textarea {
+  #searchButton textarea {
     border-radius: 10px;
     padding: 8px;
   }
-  .container-location .footer {
+  #searchButton .footer {
     width: 100%;
     height: auto;
     display: -webkit-box;
@@ -1517,10 +1620,10 @@ textarea {
         -ms-flex-direction: row !important;
             flex-direction: row !important;
   }
-  .container-location .footer a {
+  #searchButton .footer a {
     color: lightgray;
   }
-  .container-location .jobs {
+  #searchButton .jobs {
     margin: 1.2em 2.5em;
     font-size: 1.2em;
     width: 100px;
@@ -1533,18 +1636,18 @@ textarea {
             flex-direction: column;
     padding: 20px 0;
   }
-  .container-location .foo-title {
+  #searchButton .foo-title {
     margin: auto;
   }
-  .container-location .pay-icons {
+  #searchButton .pay-icons {
     font-size: 2rem;
   }
-  .container-location .socials {
+  #searchButton .socials {
     width: 100px;
     margin: 0.6em 2.5em;
     padding: 1em 0;
   }
-  .container-location .socials i {
+  #searchButton .socials i {
     margin: 0.1em;
     font-size: 2.8em;
     -ms-flex-wrap: wrap;
@@ -1925,7 +2028,7 @@ textarea {
   .container-location .location-maps #maps-location {
     width: 800px;
   }
-  .container-location .explore .gridCont1 .gridItem.three iframe {
+  .container-location .explore iframe {
     height: 400px;
     width: 600px;
   }
