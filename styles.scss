@@ -21,7 +21,6 @@ $eighth: #727272 ;
 
 
 
-// Ejemplo de bucle @for
 
 @for $i from 1 through 4{
   .faq__item--content-#{$i}{
@@ -71,15 +70,26 @@ $eighth: #727272 ;
 }
 
 .footer {
+
   grid-area: footer;
 }
 
 .gridContainer {
   display: grid;
   grid-template-areas: "header" "main" "footer";
+  #navbar1 {
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+  }
 }
 
 /* HEADER / NAV */
+
+.navbar1{
+  width: 100%;
+  position: fixed;
+}
 
 nav {
   font-size: x-small;
@@ -207,7 +217,7 @@ ul li {
 }
 .loop {
   min-width: 417px;
-  width: 100vw;
+  width: 100%;
 }
 
 /* EXPLORE */
@@ -265,6 +275,7 @@ ul li {
 }
 
 .explore {
+  width: 101.5%;
   #exploreTitle {
     padding-top: 2em;
     margin: $fs-sm;
@@ -375,7 +386,6 @@ th {
   margin: 1em 2em !important;
 
   .card{
-    // width: 150px !important;
     margin: 2em auto;
     border-radius: 5px;
     justify-content: center;
@@ -545,6 +555,10 @@ textarea {
   }
 
   /* HEADER / NAV */
+  .navbar1{
+    width: 100%;
+    position: fixed;
+  }
 
   nav {
     font-size: small;
@@ -611,7 +625,7 @@ textarea {
   }
 
   .loop {
-    width: 100vw;
+    width: 100%;
   }
 
   /* EXPLORE */
@@ -787,7 +801,6 @@ textarea {
     margin: 1em 2em !important;
   
     .card{
-      // width: 150px !important;
       margin: 2em 1em;
       border-radius: 10px;
       justify-content: center;
@@ -973,6 +986,11 @@ textarea {
 
   /* HEADER / NAV */
 
+  .navbar1{
+    width: 100%;
+    position: fixed;
+  }
+
   nav {
     font-size: medium;
   }
@@ -1075,7 +1093,7 @@ textarea {
     }
   }
   .loop {
-    width: 100vw;
+    width: 100%;
   }
 
   /* EXPLORE */
@@ -1446,6 +1464,8 @@ textarea {
 
   /* HEADER / NAV */
 
+
+
   main {
     width: 100%;
   }
@@ -1554,7 +1574,7 @@ textarea {
     }
   }
   .loop {
-    width: 100vw;
+    width: 100%;
   }
 
 
