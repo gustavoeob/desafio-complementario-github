@@ -201,7 +201,6 @@ ul li {
 .main {
   bottom: 200px;
   padding-top: -100px;
-  width: 100%;
 }
 
 .cover, .cover-new, .cover-sale {
@@ -215,7 +214,6 @@ ul li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
 }
 
 .cover .cover-title, .cover-new .cover-title, .cover-sale .cover-title {
@@ -287,18 +285,12 @@ ul li {
 
 /* EXPLORE */
 main {
-  width: 100%;
+  width: 85%;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 main #sale-products-section {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 100%;
-  padding: 20px 30px !important;
+  width: 80%;
 }
 
 .gridItem {
@@ -825,6 +817,11 @@ textarea {
     width: 100%;
   }
   /* EXPLORE */
+  .col {
+    margin: 1em auto;
+    width: 15vw;
+    height: 0%;
+  }
   .gridItem {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1915,12 +1912,7 @@ textarea {
   }
   /* EXPLORE */
   main {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: auto;
+    width: 80%;
     margin: 40px auto;
   }
   .gridItem {

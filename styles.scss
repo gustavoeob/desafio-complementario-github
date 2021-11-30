@@ -169,14 +169,12 @@ ul li {
 .main {
   bottom: 200px;
   padding-top: -100px;
-  width: 100%;
 }
 
 .cover, .cover-new, .cover-sale {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
   
   .cover-title {
     width: 100%;
@@ -230,17 +228,12 @@ ul li {
 }
 
 /* EXPLORE */
-.col{
-  
-}
 main{
-  width: 100%;
+  width: 85%;
   margin: auto;
-  display: flex;
+
   #sale-products-section {
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 20px 30px !important;
+    width: 80%;
   }
 
 }
@@ -667,7 +660,9 @@ textarea {
 
   /* EXPLORE */
   .col{
-   
+    margin: 1em auto;
+    width: 15vw;
+    height: 0%
   }
   .gridItem {
     > * {
@@ -1633,9 +1628,7 @@ textarea {
   /* EXPLORE */
 
   main{
-    display: flex;
-    flex-wrap: wrap;
-    width: auto;
+    width: 80%;
     margin: 40px auto;
   }
   
