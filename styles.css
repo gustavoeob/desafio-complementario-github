@@ -40,6 +40,11 @@
   font-family: "Josefin Sans", sans-serif;
 }
 
+html {
+  width: 100%;
+  min-width: 100%;
+}
+
 .alt {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -95,6 +100,7 @@
 .navbar1 {
   width: 100%;
   position: fixed;
+  z-index: 1000 !important;
 }
 
 nav {
@@ -195,6 +201,7 @@ ul li {
 .main {
   bottom: 200px;
   padding-top: -100px;
+  width: 100%;
 }
 
 .cover, .cover-new, .cover-sale {
@@ -208,6 +215,7 @@ ul li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
 }
 
 .cover .cover-title, .cover-new .cover-title, .cover-sale .cover-title {
@@ -263,7 +271,9 @@ ul li {
 }
 
 .cover-photo .cover__photo--new, .cover-photo .cover__photo--sale {
-  width: 75%;
+  margin-top: 2vh;
+  background-size: cover;
+  width: 100%;
   height: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -271,11 +281,26 @@ ul li {
 }
 
 .loop {
-  min-width: 417px;
+  min-width: 100vw;
   width: 100%;
 }
 
 /* EXPLORE */
+main {
+  width: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #sale-products-section {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  padding: 20px 30px !important;
+}
+
 .gridItem {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -313,7 +338,7 @@ ul li {
 
 .gridItem p {
   font-weight: 2em;
-  color: #fff;
+  color: #326177;
 }
 
 .gridItem.three button a {
@@ -338,8 +363,6 @@ ul li {
 .explore {
   margin: -20px;
   text-align: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(#326177), to(#fff));
-  background: linear-gradient(#326177, #fff);
 }
 
 .exploreImg1,
@@ -390,7 +413,7 @@ ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2.5em 0;
+  padding: 120px 0;
   margin: auto;
 }
 
@@ -776,7 +799,29 @@ textarea {
     font-size: 0.2em;
     cursor: pointer;
   }
+  .cover-photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .cover-photo .cover__photo--new, .cover-photo .cover__photo--sale {
+    margin-top: 5vh;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .loop {
+    margin-top: 5em;
     width: 100%;
   }
   /* EXPLORE */
@@ -813,8 +858,7 @@ textarea {
     border: 2px solid cadetblue;
   }
   .gridItem p {
-    font-weight: 2em;
-    color: #fff;
+    color: #326177;
   }
   .gridItem.three button a {
     color: cadetblue;
@@ -832,8 +876,9 @@ textarea {
   }
   .explore {
     text-align: center;
-    background: -webkit-gradient(linear, left top, left bottom, from(#326177), to(#fff));
-    background: linear-gradient(#326177, #fff);
+  }
+  .explore #exploreTitle p {
+    color: #326177;
   }
   .exploreImg1,
   .exploreImg2 {
@@ -875,7 +920,7 @@ textarea {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 2.5em 0;
+    padding: 120px 0;
     margin: auto;
   }
   .container-location .location-maps {
@@ -938,20 +983,23 @@ textarea {
   }
   /* -------------------- BOOTSTRAP TABLE ----------------------- */
   .table {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: 70% !important;
-    margin-bottom: 1em;
+    margin-bottom: 2.5em;
     background-color: transparent;
-    margin: 50px;
+    margin: 100px;
   }
-  tr {
-    width: 70%;
-  }
-  td {
-    text-align: center;
-  }
-  th {
+  .table tbody th {
     text-align: center !important;
     color: cadetblue;
+  }
+  .table tbody th tr {
+    width: 100%;
+  }
+  .table tbody th tr td {
+    text-align: center;
   }
   /* REVIEWS */
   .card-group {
@@ -1156,6 +1204,7 @@ textarea {
   }
   body {
     max-height: 100%;
+    width: 100%;
   }
   .alt h2 {
     margin-top: 170px;
@@ -1246,6 +1295,7 @@ textarea {
     color: black;
   }
   .main {
+    width: 100%;
     bottom: 200px;
     padding-top: -100px;
   }
@@ -1308,7 +1358,9 @@ textarea {
     width: 100%;
   }
   .cover-photo .cover__photo--new, .cover-photo .cover__photo--sale {
-    width: 75%;
+    margin-top: 10vh;
+    background-size: cover;
+    width: 100%;
     height: auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1379,8 +1431,6 @@ textarea {
   }
   .explore {
     margin: -20px;
-    background: -webkit-gradient(linear, left top, left bottom, from(#326177), to(#fff));
-    background: linear-gradient(#326177, #fff);
     text-align: center;
   }
   .explore .gridCont1 {
@@ -1437,7 +1487,7 @@ textarea {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 2.5em 0;
+    padding: 120px 0;
     margin: auto;
   }
   .container-location .location-maps {
@@ -1852,7 +1902,9 @@ textarea {
     width: 100%;
   }
   .cover-photo .cover__photo--new, .cover-photo .cover__photo--sale {
-    width: 75%;
+    margin-top: 10vh;
+    background-size: cover;
+    width: 100%;
     height: auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1862,6 +1914,15 @@ textarea {
     width: 100%;
   }
   /* EXPLORE */
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: auto;
+    margin: 40px auto;
+  }
   .gridItem {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1929,8 +1990,6 @@ textarea {
   }
   .explore {
     text-align: center;
-    background: -webkit-gradient(linear, left top, left bottom, from(#326177), to(#fff));
-    background: linear-gradient(#326177, #fff);
   }
   .explore .gridCont1 {
     width: 100%;
@@ -2022,7 +2081,7 @@ textarea {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 2.5em 0;
+    padding: 120px 0;
     margin: auto;
     /* BENEFITS */
     /* -------------------- BOOTSTRAP TABLE ----------------------- */
@@ -2056,6 +2115,7 @@ textarea {
     width: 600px;
   }
   .container-location .explore .three p {
+    color: #000;
     background: none;
     font-size: 1.2em;
   }

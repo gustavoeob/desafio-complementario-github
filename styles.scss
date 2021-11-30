@@ -45,6 +45,10 @@ $eighth: #727272 ;
   box-sizing: border-box;
   font-family: "Josefin Sans", sans-serif;
 }
+html{
+  width: 100%;
+  min-width: 100%
+}
 
 .alt {
   display: flex;
@@ -89,6 +93,7 @@ $eighth: #727272 ;
 .navbar1{
   width: 100%;
   position: fixed;
+  z-index: 1000 !important;
 }
 
 nav {
@@ -164,12 +169,14 @@ ul li {
 .main {
   bottom: 200px;
   padding-top: -100px;
+  width: 100%;
 }
 
 .cover, .cover-new, .cover-sale {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
   
   .cover-title {
     width: 100%;
@@ -210,17 +217,33 @@ ul li {
   width: 100%;
 
   .cover__photo--new, .cover__photo--sale{
-    width: 75%;
+    margin-top: 2vh;
+    background-size: cover;
+    width: 100%;
     height: auto;
     justify-content: center;
   }
 }
 .loop {
-  min-width: 417px;
+  min-width: 100vw;
   width: 100%;
 }
 
 /* EXPLORE */
+.col{
+  
+}
+main{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  #sale-products-section {
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px 30px !important;
+  }
+
+}
 
 .gridItem {
   > * {
@@ -245,7 +268,7 @@ ul li {
 
   p {
     font-weight: 2em;
-    color: #fff;
+    color: $sixth;
   }
 
   &.three button a {
@@ -266,7 +289,6 @@ ul li {
 .explore {
   margin: -20px;
   text-align: center;
-  background: linear-gradient($sixth, $fourth);
 }
 
 .exploreImg1,
@@ -309,7 +331,7 @@ ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2.5em 0;
+  padding: 120px 0;
   margin: auto;
   
   .location-maps{
@@ -623,13 +645,30 @@ textarea {
       }
     }
   }
+  .cover-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .cover__photo--new, .cover__photo--sale{
+      margin-top: 5vh;
+      background-size: cover;
+      width: 100%;
+      height: auto;
+      justify-content: center;
+    }
+  }
 
   .loop {
+    margin-top: 5em;
     width: 100%;
   }
 
   /* EXPLORE */
-
+  .col{
+   
+  }
   .gridItem {
     > * {
       background: #fff;
@@ -652,8 +691,7 @@ textarea {
     }
 
     p {
-      font-weight: 2em;
-      color: #fff;
+      color:$sixth;
     }
 
     &.three button a {
@@ -672,7 +710,11 @@ textarea {
 
   .explore {
     text-align: center;
-    background: linear-gradient($sixth, $fourth);
+    #exploreTitle {
+      p{
+        color: $sixth;
+      }
+    }
   }
 
   .exploreImg1,
@@ -714,7 +756,7 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2.5em 0;
+    padding: 120px 0;
     margin: auto;
     
     .location-maps{
@@ -775,24 +817,29 @@ textarea {
   /* -------------------- BOOTSTRAP TABLE ----------------------- */
 
   .table {
+    display: flex;
     width: 70% !important;
-    margin-bottom: $fs-sm;
+    margin-bottom: $fs-xxl;
     background-color: transparent;
-    margin: 50px;
-  }
+    margin: 100px;
+    tbody{
+      th {
+        text-align: center !important;
+        color: cadetblue;
+        tr{
+          width: 100%;
+          td {
+            text-align: center;
+            }
+          }
+        }
+      }
+    }
 
-  tr {
-    width: 70%;
-  }
+  
 
-  td {
-    text-align: center;
-  }
+  
 
-  th {
-    text-align: center !important;
-    color: cadetblue;
-  }
 
   /* REVIEWS */
 
@@ -957,6 +1004,7 @@ textarea {
 
   body {
     max-height: 100%;
+    width: 100%;
   }
 
   .alt h2 {
@@ -1039,6 +1087,7 @@ textarea {
   }
 
   .main {
+    width: 100%;
     bottom: 200px;
     padding-top: -100px;
   }
@@ -1087,7 +1136,9 @@ textarea {
     width: 100%;
 
     .cover__photo--new, .cover__photo--sale{
-      width: 75%;
+      margin-top: 10vh;
+      background-size: cover;
+      width: 100%;
       height: auto;
       justify-content: center;
     }
@@ -1146,7 +1197,6 @@ textarea {
 
   .explore {
     margin: -20px;
-    background: linear-gradient($sixth, $fourth);
     text-align: center;
 
     .gridCont1 {
@@ -1199,7 +1249,7 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2.5em 0;
+    padding: 120px 0;
     margin: auto;
     
     .location-maps{
@@ -1568,7 +1618,9 @@ textarea {
     width: 100%;
 
     .cover__photo--new, .cover__photo--sale{
-      width: 75%;
+      margin-top: 10vh;
+      background-size: cover;
+      width: 100%;
       height: auto;
       justify-content: center;
     }
@@ -1580,6 +1632,13 @@ textarea {
 
   /* EXPLORE */
 
+  main{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    margin: 40px auto;
+  }
+  
   .gridItem {
     > * {
       background: #fff;
@@ -1635,7 +1694,6 @@ textarea {
 
   .explore {
     text-align: center;
-    background: linear-gradient($sixth ,$fourth);
 
     .gridCont1 {
       width: 100%;
@@ -1722,7 +1780,7 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2.5em 0;
+    padding: 120px 0;
     margin: auto;
     
     .location-maps{
@@ -1747,6 +1805,7 @@ textarea {
     }
 
     .three p {
+      color: $third;
       background: none;
       font-size: $fs-md;
     }
